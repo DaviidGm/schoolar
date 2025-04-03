@@ -16,7 +16,7 @@ $res = pg_query($conn, $sql_email_exist);
    $row = pg_fetch_assoc($res);
    if($row['total']>0){
      echo "email already exist";} 
- else{
+   else{
     $sql = "INSERT INTO users(firstname, lastname, email, password)
     VALUES('$fname','$lname','$email','$enc_pass')
     ";
