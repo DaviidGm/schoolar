@@ -1,8 +1,8 @@
 <?php
 include('../config/database.php');
 
-$email =$_POST['e_mail'];
-$passw =$_POST['p_sswd'];
+$email =  $_POST['e_mail'];
+$passwd = $_POST['p_sswd'];
 $sql = " 
 SELECT   
 -- id,
@@ -12,8 +12,8 @@ SELECT
 FROM 
   users
 WHERE
- email = 'peter@gmail.com' and
- password = 'peter' and  
+ email = '$email' and
+ password = '$passwd' and  
  status = true
 group BY
 id; 
