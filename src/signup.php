@@ -4,7 +4,7 @@ include('../config/database.php');
 $fname  = $_POST['f_name'];
 $lname  = $_POST['l_name'];
 $email  = $_POST['e_mail'];
-$passwd = $_POST['passw'];
+$passwd = $_POST['passwd'];
 
 
 //$enc_pass = md5($passwd);
@@ -24,7 +24,9 @@ $res = pg_query($conn, $sql_email_exist);
      $res = pg_query($conn, $sql);
 
     if($res){
-     echo "user has been created succesfully";
+     //echo "user has been created succesfully";
+     echo "<script>alert('user has been created. Go to login!')</script>";
+     header('Refresh: 0; URL=http://localhost/schoolar/src/signin.html');
 
     } else {
       echo "error";

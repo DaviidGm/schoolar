@@ -27,9 +27,9 @@
   ");
 
   if(!$conn){
-    die("coneccion error" . pg_last_error());
+    //die("coneccion error" . pg_last_error());
   }else{
-   echo "success coneccion";
+   //echo "success coneccion";
   }
 
 ?>

@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+if(!isset($_SESSION['user_id'])){
+
+}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +17,6 @@
 <link rel="icons" type="image/png" href="src/icons/knowledge.png">
 </head>
 <body>
-   <a href="src/signin.html">sign in</a>&nbsp;|&nbsp;
-   <a href="src/signup.html">sign up</a>
+   <a href="signin.html">logout</a>
 </body>
 </html>
